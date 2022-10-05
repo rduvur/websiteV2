@@ -1,0 +1,175 @@
+:root {
+
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+
+  }
+
+  body {
+
+    background: var(--bg);
+    font-family: YZYSPLY;
+    color: var(--white)
+
+}
+
+.dark-theme {
+
+  --bg: var(--black);
+
+}
+
+video
+{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+#welcometext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  }
+
+#top-left {
+  vertical-align: top;
+  text-align: left;
+}
+
+@font-face {
+
+  font-family: YZYSPLY;
+  src: url(VCR_OSD_MONO.ttf);
+
+}
+
+#container {
+  display:flex;
+  position: relative;  
+  justify-content: center;
+  align-items: center;
+}
+
+#container .btn {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85px;
+  width: 250px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+.items-container {
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+  
+video{
+
+  height: 700px;
+  width: 920px;
+  display: flex;
+  margin: 0 auto;
+
+  }
+
+.grow {
+    
+    height: 26px;
+    width: 100%;
+    float: left;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: left;
+    overflow: hidden;
+}
+
+.growspecial {
+    
+  height: 26px;
+  width: 100%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: left;
+  overflow: hidden;
+}
+
+.growspecialer {
+
+  height: 26px;
+  width: 100%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: left;
+  overflow: hidden;
+}
+
+.grow:hover {
+  height: 100px;
+}
+
+.growspecial:hover {
+  height: 150px;
+}
+
+.growspecialer:hover {
+  height: 260px;
+}
+
+img.animated-gif{
+  width: 300px;
+  height: auto;
+}
+
+img.backgroundgif{
+  width: 1100px;
+  height: 400px;
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+
+b{
+  font-size: 20px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+  
+
+
+ 
